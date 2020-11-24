@@ -1,4 +1,4 @@
-package ch.zli.m223.punchclock.security;
+package filter;
 
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.JWT;
@@ -21,9 +21,7 @@ import static ch.zli.m223.punchclock.security.SecurityConstants.TOKEN_PREFIX;
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
 
-    public JWTAuthorizationFilter(AuthenticationManager authManager) {
-        super(authManager);
-    }
+    public JWTAuthorizationFilter(AuthenticationManager authManager) { super(authManager); }
 
     @Override
     protected void doFilterInternal(HttpServletRequest req,

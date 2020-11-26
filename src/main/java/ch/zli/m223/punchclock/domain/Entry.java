@@ -59,5 +59,11 @@ public class Entry {
 
     public Category getCategory() { return this.category; }
 
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     public ApplicationUser getApplicationUser() { return this.applicationUser; }
+
+    public void setApplicationUser(ApplicationUser applicationUser) { this.applicationUser = applicationUser; }
 }
